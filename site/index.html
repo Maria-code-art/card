@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт таролога для гаданий на картах Таро. Онлайн-консультации, расклады и помощь в личных вопросах.">
+    <title>Таро: Путь к самопознанию</title>
+    <!-- Ссылка на внешний CSS файл (или можно вписать стиль прямо в HTML) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Таро: Путь к самопознанию</h1>
+    <p>Гадания на картах Таро для понимания жизни и решений.</p>
+</header>
+
+<!-- Описание услуг -->
+<section class="section" id="about">
+    <h2>О нас</h2>
+    <p>Мы — команда опытных тарологов, готовых помочь вам раскрыть тайны жизни с помощью карт Таро.Запутались в себе? Мы поможем! Не можете разобраться в ситуации? Разберемся вместе!. Не понимаете что делать дальше? Мы подскажем!Понимание себя, выбор правильного пути и предсказания для будущего — это лишь малая часть того, что мы можем предложить.</p>
+</section>
+
+<!-- Услуги -->
+<section class="section" id="services">
+    <h2>Наши услуги</h2>
+    <p>Выберите услугу, которая вас интересует:</p>
+    <div class="tarot-card">
+        <h3>Онлайн-гадание</h3>
+        <p>Получите ответ на ваш вопрос в удобное для вас время.</p>
+        <button class="button" onclick="showForm()">Записаться</button>
+    </div>
+    <div class="tarot-card">
+        <h3>Персональное гадание</h3>
+        <p>Индивидуальные расклады по вашим вопросам.</p>
+        <button class="button" onclick="showForm()">Записаться</button>
+    </div>
+</section>
+
+<!-- Форма записи -->
+<section class="section" id="contact">
+    <h2>Записаться на консультацию</h2>
+    <div class="form-container" id="formContainer" style="display:none;">
+        <h3>Введите свои данные</h3>
+        <form id="consultationForm">
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+            <input type="email" id="email" name="email" placeholder="Ваш email" required>
+            <textarea id="message" name="message" rows="4" placeholder="Опишите ваш вопрос" required></textarea>
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </div>
+    <p>Запишитесь на консультацию, и наш таролог свяжется с вами для проведения сеанса.</p>
+</section>
+
+<!-- Подключение JavaScript -->
+<script src="app.js"></script>
+</body>
+</html>
